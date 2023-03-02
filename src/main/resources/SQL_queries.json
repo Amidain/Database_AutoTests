@@ -1,0 +1,34 @@
+{
+  "test_queries": {
+    "getTestById": "SELECT * FROM test WHERE id= ?",
+    "getTestByName": "SELECT * FROM test WHERE name= ?",
+    "getAllTests": "SELECT * FROM test",
+    "addTest": "INSERT INTO test (name, status_id, method_name, project_id, session_id, start_time, end_time, env, browser, author_id) VALUES (?,?,?,?,?,?,?,?,?,?)",
+    "updateTest": "UPDATE test SET name=?, status_id=?, method_name=?, project_id=?, session_id=?, start_time=?, end_time=?, env=?, browser=?, author_id=? WHERE id= ?",
+    "deleteTest": "DELETE FROM test WHERE id=?",
+    "getTestsWithTwoRepeatingDigitsInId": "SELECT * FROM test WHERE id LIKE ? LIMIT 10"
+  },
+  "session_queries": {
+    "getSessionById": "SELECT * FROM session WHERE id= ?",
+    "getAllSessions": "SELECT * FROM session",
+    "addSession": "INSERT INTO session (session_key, created_time, build_number) VALUES (?,?,?)",
+    "updateSession": "UPDATE session SET build_number=? WHERE id= ?",
+    "deleteSession": "DELETE FROM session WHERE id= ?"
+  },
+  "author_queries": {
+    "getAuthorById": "SELECT * FROM author WHERE id= ?",
+    "getAuthorByName": "SELECT * FROM author WHERE name= ?",
+    "getAllAuthors": "SELECT * FROM author",
+    "addAuthor": "INSERT INTO author (name, login, email) VALUES (?,?,?)",
+    "updateAuthor": "UPDATE author SET name=?, login=?, email=? WHERE id= ?",
+    "deleteAuthor": "DELETE FROM author WHERE id= ?"
+  },
+  "project_queries": {
+    "getProjectById": "SELECT * FROM project WHERE id= ?",
+    "getProjectByName": "SELECT * FROM project WHERE name= ?",
+    "getAllProjects": "SELECT * FROM project",
+    "addProject": "INSERT INTO project (name) VALUES (?)",
+    "updateProject": "UPDATE project SET name=? WHERE id= ?",
+    "deleteProject": "DELETE FROM project WHERE id= ?"
+  }
+}

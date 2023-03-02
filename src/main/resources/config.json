@@ -1,0 +1,22 @@
+{
+  "credentials": {
+    "user": "*user*",
+    "password": "*password*"
+  },
+  "db_connection": {
+    "protocol": "jdbc:mysql:",
+    "hostname": "//localhost",
+    "port": "3306",
+    "db_name": "union_reporting"
+  },
+  "project_details":{
+    "project_name": "db_tests",
+    "env": "Java",
+    "browser": "chrome",
+    "project_author": {
+      "name": "Lukasz Mostowiec",
+      "login": "Amidain",
+      "email": "l.mostowiec@qa-academy.com"
+    }
+  }
+}
